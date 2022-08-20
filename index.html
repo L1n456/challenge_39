@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Interactive Card Details Form</title>
+</head>
+<body>
+    <div class="left">
+        <div class="card-1">
+            <img src="images/card-logo.svg" alt="">
+            <h2 class="card-nbr">0000 0000 0000 0000</h2>
+            <div class="btm">
+                <p class="name">JANE APPLESEED</p>
+                <p><span class="m">00</span>/<span  class="y">00</span></p>
+            </div>
+        </div>
+
+        <div class="card-2">
+            <h2 class="cvc">000</h2>
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="form">
+            <label for="name">cardholder name</label>
+            <input type="text" name="name" id="name" placeholder="e.g. Jane Appleseseed" >
+            <p class="error-1 error">Can't be blank</p>
+            <label for="c-nbr">card number</label>
+            <input type="text" name="c-nbr" id="c-nbr" placeholder="e.g. 1234 5678 9123 0000" maxlength="19">
+            <p class="error-2 error">Can't be blank</p>
+            <div class="flexs">
+                <div class="flex-1">
+                    <label for="date">exp. date (mm/YY)</label>
+                    <label for="cvc">cvc</label>
+                </div>
+                <div class="flex-2">
+                    <input type="text" name="month" id="month" placeholder="MM" maxlength="2">
+                    <input type="text" name="year" id="year" placeholder="YY" maxlength="2">
+                    <input type="text" name="cvc" id="cvc" placeholder="e.g. 123" maxlength="3">
+                </div>
+                <div class="flex-3">
+                    <p class="error-3 error">Can't be blank</p>
+                    <p class="error-4 error">Can't be blank</p>
+                    <p class="error-5 error">Can't be blank</p>
+                </div>
+            </div>
+            <input type="submit" value="Confirm" id="submit">
+        </div>
+
+        <div class="thank">
+            <img src="images/icon-complete.svg" alt="">
+            <h1>thank you!</h1>
+            <p>We've added your card details</p>
+            <button class="continue">Continue</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
